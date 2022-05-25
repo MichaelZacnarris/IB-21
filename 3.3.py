@@ -6,7 +6,7 @@ class MinStat:
         self.stat.append(i)
 
     def result(self):
-        if self.stat == []:
+        if not self.stat:
             return
         else:
             return min(self.stat)
@@ -20,7 +20,7 @@ class MaxStat:
         self.stat.append(i)
 
     def result(self):
-        if self.stat == []:
+        if not self.stat:
             return
         else:
             return max(self.stat)
@@ -34,12 +34,12 @@ class AverageStat:
         self.stat.append(i)
 
     def result(self):
-        if self.stat == []:
+        if not self.stat:
             return
         else:
             llen = len(self.stat)
             ssum = sum(self.stat)
-            return llen / ssum
+            return ssum / llen
 
 
 values = [1, 2, 4, 5]
