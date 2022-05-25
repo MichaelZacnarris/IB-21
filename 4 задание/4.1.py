@@ -20,3 +20,6 @@ class FoodInfo:
     def get_kcalories(self):
         return 4 * self.get_proteins() + 9 * self.get_fats() + 4 * self.get_carbohydrates()
 
+    def __repr__(self):
+        return 'FoodInfo({},{},{},{})'.format(self.get_proteins(), self.get_fats(), self.get_carbohydrates(),
+                                              self.get_kcalories())
