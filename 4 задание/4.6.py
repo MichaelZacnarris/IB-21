@@ -1,13 +1,15 @@
+class SparseArray:  # __getitem__(self, item) – получение значения по ключу item;
+    # __setitem__(self, key, value) – запись значения value по ключу key;
+    # __delitem__(self, key) – удаление элемента по ключу key.
 
+    def __init__(self):
+        self.data = {}
 
+    def __getitem__(self, key):
+        return self.data.get(key, 0)
 
-
-
-
-
-
-
-
+    def __setitem__(self, key, value):
+        self.data[key] = value
 
 arr = SparseArray()
 arr[1] = 10
