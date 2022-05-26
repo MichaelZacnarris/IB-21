@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from colorama import Fore, Back, Style
 from source.storage.csv import Library
 from source.models.cli import *
